@@ -24,7 +24,7 @@ app.post('/sendNotification', async (req, res) => {
       title,
       body,
     },
-    token: token,
+     topic: 'all',
   };
 
   try {
