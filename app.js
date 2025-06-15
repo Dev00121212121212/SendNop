@@ -41,7 +41,7 @@ app.post('/sendNotification', async (req, res) => {
 //   console.log(`FCM server running at http://localhost:${PORT}`);
 // });
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`FCM server running at http://localhost:${PORT}`);
 });
