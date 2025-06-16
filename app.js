@@ -24,11 +24,7 @@ app.post('/sendNotification', async (req, res) => {
       title,
       body,
     },
-    token: token,
-    topic: "all", // or use 'token: <your_device_token>'
-  android: {
-    priority: "high"
-  }
+    token: token
   };
 
   try {
